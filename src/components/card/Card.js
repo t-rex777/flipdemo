@@ -9,7 +9,7 @@ const {
   card__body__brand,
   card__body__name,
   card__body__price,
-  card__footer__price
+  card__footer__price,
 } = styles;
 function Card({ thumbnail, name, brand, price, size }) {
   return (
@@ -23,8 +23,11 @@ function Card({ thumbnail, name, brand, price, size }) {
         <p className={card__body__price}>₹ {price}</p>
       </div>
       <div className={card__footer}>
-        Size {size.map((data) => (
-          <p className={card__footer__price}>{data}</p>
+        Size{" "}
+        {size.map((data, i) => (
+          <p key={i} className={card__footer__price}>
+            {data}
+          </p>
         ))}
       </div>
     </div>

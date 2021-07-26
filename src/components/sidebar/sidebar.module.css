@@ -9,6 +9,13 @@
   margin-left: 2rem;
   margin-bottom: -1rem;
 }
+.filter__header__cancelbutton {
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #2874f0;
+  font-weight: 600;
+  cursor: pointer;
+}
 .filter__items {
   display: flex;
   flex-direction: column;
