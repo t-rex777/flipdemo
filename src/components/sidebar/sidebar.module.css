@@ -1,0 +1,20 @@
+.filter {
+  position: fixed;
+  top:60px;
+  background-color: #fff;
+  height: 100%;
+  padding: 0.5rem 0rem;
+}
+.filter_header {
+  margin-left: 2rem;
+}
+.filter__items {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  border-top: solid 3px #eff1f4;
+}
+
+label {
+  margin-left: 0.75rem;
+}
