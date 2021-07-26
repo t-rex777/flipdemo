@@ -1,0 +1,44 @@
+.card {
+  background-color: #fff;
+  width: 250px;
+  margin: 0.5rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card_header {
+  display: flex;
+  justify-content: center;
+}
+.card__header__image {
+  height: 250px;
+  cursor: pointer;
+}
+.card__body {
+  margin: 0.5rem 1rem;
+  line-height: 1.2rem;
+}
+.card__body__brand {
+  color: gray;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.card__body__name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.card__body__price {
+  color: rgb(14, 168, 14);
+  font-weight: 600;
+}
+
+.card__footer {
+  display: flex;
+  margin: 0.5rem 1rem;
+  color: gray;
+  font-weight: 600;
+}
+
+.card__footer__price {
+  margin: 0 1rem;
+}

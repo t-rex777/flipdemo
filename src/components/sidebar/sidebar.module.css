@@ -1,18 +1,19 @@
 .filter {
   position: fixed;
-  top:60px;
+  top: 60px;
   background-color: #fff;
   height: 100%;
   padding: 0.5rem 0rem;
 }
 .filter_header {
   margin-left: 2rem;
+  margin-bottom: -1rem;
 }
 .filter__items {
   display: flex;
   flex-direction: column;
   padding: 0.5rem 2rem;
-  border-top: solid 3px #eff1f4;
+  border-bottom: solid 3px #eff1f4;
 }
 
 label {

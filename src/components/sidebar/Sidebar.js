@@ -18,6 +18,10 @@ function Sidebar() {
         <span>
           <input type="checkbox" id="large" />
           <label htmlFor="large">Large</label>
+        </span> 
+        <span>
+          <input type="checkbox" id="xlarge" />
+          <label htmlFor="xlarge">Extra Large</label>
         </span>
       </div>
       <div className={filter__items}>
