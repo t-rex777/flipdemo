@@ -9,6 +9,14 @@ function Sort({ sortBy, sorting }) {
     <div className={sort}>
       <h3>Sort By</h3>
       <button
+        className={`${sort__btn} ${sortBy === "popularity" && sort__btn__active}`}
+        name="popularity"
+        onClick={sortProducts}
+      >
+        Popularity
+      </button>
+
+      <button
         className={`${sort__btn} ${
           sortBy === "lowtohigh" && sort__btn__active
         }`}

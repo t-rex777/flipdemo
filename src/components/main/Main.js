@@ -3,13 +3,16 @@ import Card from "../card/Card";
 import Sort from "../sort/Sort";
 import styles from "./main.module.css";
 import { productData } from "./../../data";
-import { sortByHighToLow, sortByLowToHigh } from "./../../helper";
+import {
+  sortByHighToLow,
+  sortByLowToHigh,
+} from "./../../helper";
 const { main, main__products } = styles;
 function Main({ filters }) {
-  const [sortBy, setSortBy] = useState("");
-
+  const [sortBy, setSortBy] = useState("popularity");
   const sortedProducts = useMemo(() => {
     function sortData() {
+      console.log(sortBy);
       if (sortBy === "hightolow") {
         return sortByHighToLow(productData);
       } else if (sortBy === "lowtohigh") {
