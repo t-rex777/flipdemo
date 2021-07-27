@@ -53,7 +53,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <Sidebar cancelAll={cancelAll} addFilter={handleFilters} />
+      <Sidebar cancelAll={cancelAll} filters={filters} addFilter={handleFilters} />
       <Main filters={filters} />
     </div>
   );

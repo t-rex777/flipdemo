@@ -5,7 +5,7 @@ import styles from "./main.module.css";
 import { productData } from "./../../data";
 import { sortByHighToLow, sortByLowToHigh } from "./../../helper";
 const { main, main__products } = styles;
-function Main({ filters, isCancelled }) {
+function Main({ filters }) {
   const [sortBy, setSortBy] = useState("");
 
   const sortedProducts = useMemo(() => {
